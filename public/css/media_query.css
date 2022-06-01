@@ -1,0 +1,130 @@
+
+/* laptop */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    body {
+      /* background-color: rgb(58, 34, 28); */
+      background-size: 100% 65vw;
+
+    }
+    .navbar{
+      padding: 4px;
+    }
+    .nav-logo {
+        font-size: 1rem;
+        /* font-weight: 200; */
+
+        width: 20%;
+        /* margin: 1rem; */
+        padding: 2px;
+      }
+      .nav-link{
+          font-size:1.4rem ;
+          /* font-weight: bold; */
+          padding: 1px;
+          display: flex;
+      }
+      .mobile-logo{
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 4;
+      }
+
+
+}
+
+
+
+/* tablet css */
+@media screen and (min-width :601px) and (max-width: 1024px){
+    body {
+        /* background-color: rgb(21, 255, 0); */
+        background-size: 100% 16.5%;
+    }
+    .navbar{
+        /* background-color: rgb(21, 255, 0);/ */
+        /* width: 94%; */
+        justify-content: space-between;
+        font-size: 1rem;
+        
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-logo {
+        font-size: 1.5rem;
+        font-weight: 200;
+
+        width: 20%;
+        margin: 1rem;
+      }
+
+      div.burger > .fas.fa-bars {
+        /* position: relative; */
+        display: block;
+       margin-right: 2rem;
+        /* font-size: 4rem; */
+      }
+      div.burger-close > .fas.fa-times {
+        display: flex;
+      }
+      .mobile-logo{
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 4;
+      }
+   
+
+
+
+      
+
+}
+/* phone css */
+@media screen and (max-width: 600px) {
+    body {
+      /* background-color: rgb(233, 199, 47); */
+      background-size: 100% 22%;
+
+    }
+  
+    div.burger > .fas.fa-bars {
+        position: absolute;
+        display: block;
+        right: 40px;
+        top: 4px;
+
+       padding:5;
+
+        font-size: 3rem;
+      }
+    div.burger-close > .fas.fa-times {
+        display: flex;
+        font-size: 3rem;
+
+      }
+
+
+      .nav-menu{
+        display: none;
+    }
+    .nav-logo {
+   
+        width: 19%;
+        margin: 0.4rem;
+        padding: 10px;
+
+      }
+      .mobile-logo{
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 4;
+      }
+      
+   
+}

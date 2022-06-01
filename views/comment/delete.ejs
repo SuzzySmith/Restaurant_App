@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <h1> Are you you want to delete <%- comment.name%> 
+    <br> <%- comment.comment%> 
+</h1>
+    
+<form method="post" action="">
+    <input type="hidden" name="id" value="<%comment.name%>">
+    <button value="submit" > yes </button>
+     <a href="/about"> no </a>
+    
+</form>
+   
+</body>
+
+<style>
+    button {
+        color: black;
+        background: blue;
+    }
+</style>
+</html>

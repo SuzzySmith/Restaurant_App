@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+   
+    <h2>Our Menu</h2>
+   <h1> Our Popular Dishes </h1>  
+   <h3> Best cooks and best delivery guys at your service
+       <br>
+       Hot tasty food will reach you in 30 minutes
+   </h3>
+
+   <form class="example search-button" action="/menu" method ="post" style="margin:auto;max-width:300px">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+
+  <div class="add"> 
+      <a href="menus/add"> Add new menu</a>
+  </div>
+
+
+  <div class="box-menus">
+    <% if (menus) { %>
+        <% menus.forEach((menu) => { %>
+
+            <div class="menuse">
+                <h4> <%= menu.name %></h4> 
+                <h5><%= menu.price %></h5> 
+                <h6><%= menu.status %></h6> 
+                <h7><%= menu.remarks %></h7> 
+            </div>
+     
+        <div class="buttons">
+        <a class="edit" href="/menus/edit/<%- menu._id  %>">Edit</a>
+        <a class="delete" href="/menus/delete/<%- menu._id  %>">Delete</a>
+        <a class="order" href="/orders/add/<%- menu._id  %>">Add Order</a>
+        
+        </div>
+        
+   <% }) %> 
+   <% } %>
+
+
+</div>
+
+    
+</body>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+    }
+
+    h1 {
+        color: black;
+        text-align: center;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 250%;
+        margin-bottom: 1%;
+    }
+    h2{
+        color: black;
+        font-size: 100%;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 5%;
+        margin-bottom: 1%;
+        
+    }
+    h3{
+        color: black;
+        font-size: 70%;
+        text-align: center;
+        line-height: 25px;
+        
+    }
+    h4{
+        color: black;
+        font-size: 100%;
+       font-weight: 500;
+       margin-left: -5%;
+        
+    }
+    h5{
+        color:  rgb(228, 137, 1);
+        font-size: 100%;
+       font-weight: 500;
+       margin-left: -5%;
+        
+    }
+    .menuse {
+        margin-top: 5%;
+        /* height: 150vh; */
+        overflow: hidden;
+         background-color: lightgrey;
+        width: 300px; 
+        border: 15px solid transparent;
+        padding: 50px;
+        margin: 60px;
+       
+
+    }
+
+    .buttons {
+     margin-top: 220px;
+    margin-left: -290px;
+    line-height: 20px;
+    }
+.add{
+    color: black;
+}
+    .edit {
+        color: blue;
+        border: 1px solid;
+        background: orange;
+        padding: 5px;
+       
+border-radius: 0.3em ;
+border: 1px  rgb(228, 137, 1);
+color: rgb(255, 255, 255);
+
+box-shadow: 0 4px 6px 0 rgba(41, 41, 41, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+transition: 0.2s ease-in-out;
+        
+    }
+.edit:hover {
+outline: 0;
+cursor: pointer;
+background-color: rgb(255, 255, 255);
+color:  rgb(228, 137, 1);
+}
+
+.delete {     
+        border: 1px solid;
+        background: orange;
+        padding: 5px;
+       
+border-radius: 0.3em ;
+border: 1px solid rgb(228, 137, 1);
+color: rgb(255, 255, 255);
+
+box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+transition: 0.2s ease-in-out;
+      
+    }
+
+
+.delete:hover {
+outline: 0;
+cursor: pointer;
+background-color: rgb(255, 255, 255);
+color:  rgb(228, 137, 1);
+}
+   
+.order {
+        color: blue;
+        border: 1px solid;
+        background: orange;
+        padding: 5px;
+       
+border-radius: 0.5em ;
+border: 1px  rgb(228, 137, 1);
+color: rgb(255, 255, 255);
+
+box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+transition: 0.2s ease-in-out;
+
+
+        
+    }
+
+
+.order:hover {
+outline: 0;
+cursor: pointer;
+background-color: rgb(255, 255, 255);
+color:  rgb(228, 137, 1);
+}
+
+    h6{
+        color: black;
+        font-size: 17px;
+    }
+.box-menus{
+    display: flex;
+    flex-direction: row;
+}
+</style>
+
+</html>
+
+

@@ -1,0 +1,81 @@
+  
+
+<div>
+    
+
+    <form class=" form-box"  id="form-input" action='' method= 'post' style="width:500px;">
+
+        <div class="menu-form">
+            <label >Name</label>
+            <input value="<%-comment.name%>" type="text"  id="name" name= "name" style="font-size: -1rem;" required>
+        
+        </div>
+            
+        <div >
+            <label class="menu-form">Price</label>
+            <input value="<%-comment.email%>" type="text" id="email" name='email' style="font-size: -1rem;" required>
+        </div>
+            
+
+            <div class="menu-form">
+                <label >Comments</label>
+                <input value="<%-comment.comment%>" type="text"  id="comment" name='comment'   style="font-size: -1rem;" required>
+             
+            </div>
+
+       
+        <div  >
+            <button   type="submit" >
+                Add Comment </button>
+     
+        </div>
+
+        
+  </form> 
+
+</div>
+
+
+<style>
+body {
+    height: 100vh;
+}
+    
+   .form {
+       color: black;
+      
+       /* border: 1px solid blue; */
+
+   }
+
+   button{
+       
+       
+       margin-top: 5%;
+       color: black;
+       background-color: gray;
+       margin-bottom: 20vh;
+   }
+
+   .form-box {
+       display: flex;
+       flex-direction: column;
+       gap: 2em;
+    border: 1px solid blue;
+   }
+
+   label {
+    display: flex;
+       gap:5%;
+   }
+
+   .menu-edit {
+       color: black;
+       font-size: 30px;
+   }
+</style>
+</html>
+    
+    
+    
+   

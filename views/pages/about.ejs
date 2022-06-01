@@ -1,0 +1,182 @@
+
+
+    <section class="news" >
+    
+    
+        <div class="teams">
+            <h1>About <span class="us">Us</span></h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               
+                <!-- <span class="teams2">Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  -->
+            </p>
+    
+            <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+    </p>
+            <button>Read More</button>
+          
+         <!-- <p>It is a paradisematic country, in which roasted parts of sentences fly into your  mouth. Pityful a rethoric question.</p>
+         <p>It is a paradisematic country, in which roasted parts of sentences fly into your  mouth. Pityful a rethoric question.</p> -->
+        
+        </div>  
+    
+    </section>
+         <div class="foods-category flex-col p-2 ">
+            <h5>Meet The Team</h5>
+           <section class="second-tables features-two flex-col p-2">
+           
+            <div class="rounded-2xl shadow-2xl px-4 py-2 flex justify-between w-1/2"> 
+              <div class="foods1 profile1">
+                <img src="./assets/Profile2.png" />
+                  <div class='food-response'> Asante</div>
+                  <div class="foods_detail">C. E. O</div>
+                  <ul class="socils"> 
+                   <li>  <i class="fa fa-twitter " style=" font-size:16px; display: flex;flex-direction: column;"></i> </li>
+                   <li><i class="fa fa-facebook " style=" font-size:16px"></i>
+                    <li><i class="fa fa-linkedin " style=" font-size:16px"></i></li>
+                    <li><i class="fa fa-instagram " style=" font-size:16px"></i></li>
+                   </ul>
+              </div>
+    
+              <div class="foods1">
+                <img src="./assets/profile.jpg" />
+                  <div class='food-response'> Kofi</div>
+                  <div class="foods_detail">Chef</div>
+                  <ul class="socils"> 
+                   <li>  <i class="fa fa-twitter " style=" font-size:16px "></i> </li>
+                   <li><i class="fa fa-facebook " style=" font-size:16px"></i>
+                    <li><i class="fa fa-linkedin " style=" font-size:16px"></i></li>
+                    <li><i class="fa fa-instagram " style=" font-size:16px"></i></li>
+                   </ul>
+              </div>
+              <div class="foods1">
+                <img src="./assets/Profile1.jpg" />
+                  <div class='food-response'> Bloh</div>
+                  <div class="foods_detail">Manager</div>
+                  <ul class="socils"> 
+                   <li>  <i class="fa fa-twitter " style=" font-size:16px; display: flex;flex-direction: column;"></i> </li>
+                   <li><i class="fa fa-facebook " style=" font-size:16px"></i>
+                    <li><i class="fa fa-linkedin " style=" font-size:16px"></i></li>
+                    <li><i class="fa fa-instagram " style=" font-size:16px"></i></li>
+                   </ul>
+              </div>
+            </div>
+            <span class="py-2 -mb-4 px-4 text-5xl font-bold">
+                Testimonials
+            </span>
+              <div class="w-1/2 overflow-scroll h-80 mb-10">
+                  
+
+                <div class="flex flex-col items-center justify-center mx-auto w-full">
+                    <% if (comments) { %>
+                    <div class="w-full h-full">
+                        <!-- user comments --
+                               let pos = time.indexOf('GMT')
+                                                let date = time.substring(0, pos) 
+                         loop through comments -->
+                        <% for (let comment of comments) { %>
+        
+        
+
+                            <div class="comment-item-content m-4 p-4 rounded-xl shadow-2xl">
+                                <div class="comment-item-content-header flex justify-between items-center mx-auto">
+                                   
+                                    <div>
+                                        <p class="text-gray-600 text-4xl p-4 font-bold flex justify-start" style="font-weight: 500;">
+                                            <%= comment.comment %>
+                                        </p>
+                                        
+                                    </div>
+                                    <div class="comment-item-content-header-right flex">
+                                        <div class="flex p-1 rounded-xl shadow-xl  ">
+                                        <span class="bg-blue-100 p-2 hover:bg-blue-200 rounded-xl mr-2">
+                                              <a href="/edit/<%- comment._id  -%> ">Edit</a>
+                        
+                                        </span>
+                                        <span class="bg-red-100 p-2 hover:bg-red-200 rounded-xl">
+                                            <a href="/delete/<%- comment._id  -%> ">Delete</a>
+                      
+                                      </span>
+                                        <br>
+                                      
+
+                                       
+                                        </div>
+                                        
+            
+                                     </div>
+                                </div>
+                                <div class="comment-item-content-header-left flex-col ">
+                                       
+
+                                    <span class="text-gray-600 text-2xl "> <%= comment.name %></span>
+                                    <br>
+                                    <span class="text-gray-600 text-2xl "> <%= comment.email %></span>
+                                        <br>
+                                    <span class="text-gray-600 ">
+                                            <%=  comment.createdAt.toUTCString()%>
+                                        </span>
+                                     </div>
+                                
+                            </div>
+            
+                            <% } %>
+                                                                                                 
+                    </div>
+                    <% } %>
+                </div>
+              </div>
+          </section>
+          <br>
+          <br>
+      </div>
+      
+    
+    
+    
+     
+    
+    
+   
+
+    <style>
+        .commenters {
+            /* margin-top: 10px; */
+            text-align: center;
+            margin-top: 3%;
+        }
+
+        .comment-name {
+            text-align: center;
+
+        }
+
+        .commment-email {
+            margin-left: 70%;
+            color: rgb(184, 178, 178);
+
+        }
+        
+        .edit-comment {
+            margin-top: -30px;
+            margin-left: 70%;
+            align-items: center;
+            text-align: center;
+          
+        }
+        
+        .real-comment {
+            /* padding-top: -100px; */
+            text-align: center;
+            /* margin-left: 70px; */
+            font-size: 150%;
+            
+        }
+        
+
+    </style>
+    
+    

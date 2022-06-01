@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body> 
+   
+
+   <h1> Order Summary  </h1>  
+
+   <form class="example search-button" action="/orders" method ="post" style="margin:auto;max-width:300px">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  
+  <!-- <a href="order/add"> Add new orders</a> -->
+
+  
+
+    
+</body>
+<div class="orders">
+    <% if (orders) { %>
+        <% orders.forEach((order) => { %>
+      <h6> Client:<%= order.client %></h6> 
+
+      <p> Menu:<%= order.menu.name %></p>
+
+      <p>  Order Date:<%= order.order_date %></p>
+     
+      <p>  Cost:<%- order.cost %></p>
+
+      <p>  Status:<%- order.status %></p>
+
+        
+        <a class="edit" href="/orders/edit/<%- order._id %>">Edit</a>
+        <a class="delete" href="/orders/delete/<%- order._id %>">Delete</a>
+
+   <% }) %> 
+   <% } %>
+
+
+</div>
+
+<style>
+    
+
+    h1 {
+        color: black;
+        text-align: center;
+    }
+    .menuse {
+        margin-top: 5%;
+        height: 150vh;
+        overflow: hidden;
+    }
+
+    .edit {
+        color: blue;
+    }
+
+    .delete {
+        color: red;
+    }
+
+    h6{
+        color: black;
+        font-size: 17px;
+    }
+
+</style>
+
+</html>
+
+

@@ -1,0 +1,80 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    
+
+    <form class=" form-box"  id="form-input" actions='/menu/add' method= 'post' style="width:500px;">
+
+        <div class="menu-form">
+            <label >Name</label>
+            <input  type="text"  id="name" name= 'name' placeholder="Enter your full name" style="font-size: -1rem;" required>
+        
+        </div>
+            
+        <div >
+            <label class="menu-form">Price</label>
+            <input  type="text" id="price" name='price'  placeholder="Enter price" style="font-size: -1rem;" required>
+        </div>
+            
+
+            <div class="menu-form">
+                <label >Status</label>
+                <input  type="text"  id="status" name='status'  placeholder="Enter status" style="font-size: -1rem;" required>
+             
+            </div>
+
+               <div class="menu-form">
+                <label >Remark</label>
+                <input  type="text" id="remark" name='remark' placeholder="Enter remarks" style="font-size: -1rem;" required>
+            
+            </div>
+       
+        <div  >
+            <button type="submit"  value="submit"> Add Menu</button>
+     
+        </div>
+
+        
+       
+  </form> 
+
+</body>
+
+
+<style>
+
+    
+   .form {
+       color: black;
+      
+       /* border: 1px solid blue; */
+
+   }
+
+   button{
+       
+       
+       margin-top: 5%;
+       color: black;
+       background-color: gray;
+   }
+
+   .form-box {
+       display: flex;
+       flex-direction: column;
+       gap: 2em;
+    border: 1px solid blue;
+   }
+
+   label {
+    display: flex;
+       gap:5%;
+   }
+</style>
+</html>
+    
+    
+    
+   

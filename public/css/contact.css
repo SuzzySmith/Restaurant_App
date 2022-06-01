@@ -1,0 +1,116 @@
+
+
+*{
+ font-size: 2.1rem;
+}
+
+  
+  
+body {
+    background-image: url('../assets/bg36.jpg');
+    font-family: 'Roboto', sans-serif;
+
+    
+
+}
+h8 {
+    color: white;
+    margin-left: 4%;
+    margin-top: 40%;
+    padding-top: 50%;
+    font-size: 190%;
+    font-weight: 700;
+}
+.forms {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: grey;
+    position: relative;
+    top: 2em;
+    width: 100%;
+    outline: none;
+    margin-left: 4%;
+    
+
+    
+  }
+  
+  input[type="name"] {
+    display: flex;
+    opacity: 400px;
+    /* width: 100%; */
+    border-color: grey;
+    border-width: 1px;
+    /* border-left: transparent; */
+    /* border-right: transparent;     */
+    background-color: transparent;
+    height: 70px;
+    font-size: 2rem;
+    width: 600px;
+    color: white;
+    padding-left: 1%;
+    
+  }
+  
+  input[type="emails"] {
+    display: flex;
+    margin-top: 1em;
+    opacity: 400px;
+
+    width: 600px;
+    border-color: grey;
+    border-width: 1px;
+    /* border-top: transparent; */
+    /* border-left: transparent;
+    border-right: transparent;   */
+    font-size: 2rem;
+    /* border-right: none; */
+    color: white;
+    height: 70px;
+    background-color: transparent;
+    padding-left: 1%;
+  }
+  
+  input[type="messages"] {
+    display: flex;
+    opacity: 400px;
+    width: 600px;
+    text-align: left top;
+    border-color: grey;
+    border-width: 1px;
+    /* border-bottom: 1px  ; */
+    margin-top: 1em;
+
+    /* border-top: transparent; */
+    /* border-left: transparent;
+    border-right: transparent;  */
+    font-size: 2rem;
+    /* border-right: none; */
+    color: white;
+    height: 200px;
+    background-color: transparent;
+    padding-left: 1%;
+  }
+
+  .send {
+      
+      border-color: rgb(226, 15, 15);
+      border: 0.1em solid;
+      color: grey;
+      background: transparent;
+      margin-top: 5%;
+      width: 10%;
+      height: 13%;
+      font-size: 180%;
+      margin-left: 4%;
+
+  }
+
+  .send:hover {
+      background-color: black;
+      color: white;
+      opacity: 80%;
+  }
+
+ 

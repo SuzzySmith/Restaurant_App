@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant | <%- title %></title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&family=Hind:wght@100;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/base.css" integrity="sha512-z66y0PypNStA/ynlSM3kk1/SDr1n7pIBpQO86uxkHAtBYOJJzXAAFq9rjFz8Egh25cpv3EPcrS4Y8nVHyKB9Dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/components.min.css" integrity="sha512-f6TS5CFJrH/EWmarcBwG54/kW9wwejYMcw+I7fRnGf33Vv4yCvy4BecCKTti3l8e8HnUiIbxx3V3CuUYGqR1uQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/media_query.css">
+    <link rel="stylesheet" href="/css/home.css">
+ 
+  </head>
+
+  <body>
+  
+    <nav class="navbar transition ease-in duration-400">
+      <a href="/" class="nav-logo"><img src="/./assets/restaurant_logo.png"></a>
+  
+      <ul class=" nav-menu " >
+          <li class="nav-item" ><a href="/menu" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="/orders" class="nav-link">Orders</a></li>
+          <li class="nav-item"><a href="#Testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="/about " class="nav-link">About us</a></li>
+          <li class="nav-item"><a href="/contact" class="nav-link">Contact us</a></li>
+          <!-- <li class="nav-item"><a href="/feedback" class="nav-link">Feedback</a></li> -->
+  
+  
+      </ul>
+  
+  <div class="burger">
+      <i class="fas fa-bars "></i>
+  </div>
+  
+  </nav>
+
+    <main><%- body %></main>
+
+    <footer>
+      <div> 
+          <img class="logo" src="/assets/footer-logo.png" alt=""> 
+          <span class="editContent">© 2015 Select<br>
+          Designed by 
+          <a href="http://multifour.com/" target="_blank">Multifour.com</a>
+          </span> 
+     </div>
+  
+     <div class="soc">
+     <ul class="socials">
+      <li><i class="fa fa-twitter " style=" font-size:26px; "></i></li>
+      <li><i class="fa fa-facebook " style=" font-size:26px"></i>
+      <li><i class="fa fa-dribbble " style=" font-size:26px"></i></li>
+      <li><i class="fa fa-linkedin " style=" font-size:26px"></i></li>
+      <li><i class="fa fa-pinterest " style=" font-size:26px"></i></li>
+      <li><i class="fa fa-instagram " style=" font-size:26px"></i></li>
+      <li><i class="fa fa-google-plus " style=" font-size:26px"></i></li>
+      <li><i class="fa fa-flickr  " style=" font-size:26px"></i></li>
+      <li><i class="fa fa-behance " style=" font-size:26px"></i></li>
+      </ul>
+  
+  </div>
+  
+  <!-- <style>
+      .soc{
+          margin-top: -2%;
+          margin-left: 55%;
+          padding-bottom: 2%;
+      }
+  </style> -->
+  </footer>
+    
+
+          
+
+  </body>
+</html>

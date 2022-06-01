@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <h1> Are you you want to delete <%- menu.name%> </h1>
+    
+<form method="post">
+    <input type="hidden" name="id" value="<%menu.name%>">
+    <button value="submit" > yes </button>
+     <a href="/menu"> no </a>
+    
+</form>
+   
+</body>
+
+<style>
+    button {
+        color: black;
+        background: blue;
+    }
+</style>
+</html>
