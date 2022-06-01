@@ -4,7 +4,6 @@ const Comment = require('../model/comment');
 
 exports.create = async (req, res) => {
     
-    
     const new_comments = new comment({
         name: req.body.name,
         recommend: req.body.recommend,
@@ -21,9 +20,8 @@ exports.create = async (req, res) => {
  
 exports.edit = async (req, res) => {
     let id = req.params.comment_id 
-//  console.log(id)
+
     const comment = await Comment.findById(id);
-// console.log(comments)
     res.render('comment/edit', {title: "Edit Comments", comment : comment })
 
 }
